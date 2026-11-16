@@ -10,46 +10,44 @@ referenciados para a execução dos testes dos requisitos do relatório.
 - ef.txt (arquivo vazio)
 - if.txt (arquivo contendo #ERRO#)
 
-## Instruções de compilação
-
-### C++
+## C++
 Compile os arquivos através do comando
 
-#### Linux
+### Linux
 ```bash
 g++ -std=c++17 cpp\main.cpp -o cpp\analyzer
 ```
 
-#### Windows
+### Windows
 ```bash
 g++ -std=c++17 cpp\main.cpp -o cpp\analyzer.exe
 ```
 
 Execute o programa através do comando
 
-#### Linux
+### Linux
 ```bash
 ./cpp/analyzer {args}
 ```
 
-#### Windows
+### Windows
 ```bash
 cpp\analyzer.exe {args}
 ```
 
 Onde {args} é a lista de arquivos a serem lidos.
 
-#### Exemplo (Linux)
+### Exemplo (Linux)
 ```bash
 ./cpp/analyzer vf1.txt if.txt
 ```
 
-#### Exemplo (Windows)
+### Exemplo (Windows)
 ```bash
 cpp\analyzer.exe vf1.txt if.txt
 ```
 
-### Java
+## Java
 Compile os arquivos através do comando
 
 ```bash
@@ -64,7 +62,7 @@ java -cp java Main {args}
 
 Onde {args} é a lista de arquivos a serem lidos.
 
-#### Exemplo
+### Exemplo
 
 ```bash
 java -cp java Main vf1.txt if.txt
