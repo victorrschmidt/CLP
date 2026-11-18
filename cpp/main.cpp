@@ -64,8 +64,8 @@ public:
 int main(int argc, char *argv[]) {
     for (int i = 1; i < argc; i++) {
         try {
-            FileAnalyzer analyzer(argv[i]);
-            analyzer.analyzeContent();
+            FileAnalyzer fa(argv[i]);
+            fa.analyzeContent();
         }
         catch (const runtime_error& e) {
             cerr << "ERRO. Arquivo nao encontrado.\n" << e.what() << "\n\n";
